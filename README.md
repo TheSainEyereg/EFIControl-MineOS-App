@@ -1,2 +1,2 @@
 # EFIControl-MineOS-App
-This program was previously in AppMarket, but the author for some reason removed it, this is a release with minimal code changes.
+This is a republication of a program that was in App Market. In my opinion, this is the best program for working with EFI, so it comes with minimal code changes.

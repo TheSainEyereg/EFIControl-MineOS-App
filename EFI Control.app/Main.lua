@@ -1,4 +1,4 @@
--------------------------------------core--------------------------------
+----------------------------------------core----------------------------------------
 local GUI = require("GUI")
 local system = require("System")
 local fs = require("Filesystem")
@@ -17,7 +17,7 @@ local bootEFI = EFI.getData()
 local workspace, window = system.addWindow(GUI.tabbedWindow(1, 1, 118, 35, 0xF0F0F0))
 local layout = window:addChild(GUI.layout(1, 3, window.width, window.height, 1, 1))
 
---------------------------------functions------------------------------
+----------------------------------------func----------------------------------------
 local function addButton(text)
 return layout:addChild(GUI.roundedButton(1, 1, 36, 3, 0xD2D2D2, 0x696969, 0x4B4B4B, 0xF0F0F0, text))
 end
@@ -40,7 +40,7 @@ local function addTab(text, func)
   end
 end
 
---------------------------------------main-------------------------------------
+----------------------------------------main----------------------------------------
 addTab(localization.infoEFI, function()
 addText(localization.checksum .. check)
 addText(localization.nameEFI .. nameEFI)
@@ -87,7 +87,8 @@ addText(" this is a release with minimal code changes (so this text is not local
 addText("About all bugs report to the AppMarket page or visit official github repo:")
 addText("https://github.com/TheSainEyereg/EFIControl-MineOS-App")
 end)
-----------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------
 
 window.onResize = function(width, height)
   window.tabBar.width = width
